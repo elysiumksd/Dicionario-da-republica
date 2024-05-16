@@ -1,0 +1,35 @@
+create database dicionario2;
+CREATE TABLE dicionario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    termo VARCHAR(100) NOT NULL,
+    classe_gramatical VARCHAR(50),
+de VARCHAR(50),
+imagem VARCHAR(50),
+divisao VARCHAR(50),
+relacionado1 VARCHAR(50),
+relacionado2 VARCHAR(50),
+relacionado3 VARCHAR(50),
+    definicao1 TEXT,
+definicao2 TEXT,
+definicao3 TEXT
+);
+
+
+CREATE TABLE proverbios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    autor VARCHAR(100) NOT NULL,
+imagem VARCHAR(50),
+tema VARCHAR(50),
+    definicao1 TEXT,
+definicao2 TEXT,
+definicao3 TEXT
+);
+
+
+INSERT INTO proverbios (autor,imagem,tema,definicao1,definicao2,definicao3) VALUES
+('Salomão rei de Israel', 'Salomão rei de Israel', ' Sabedoria','O temor de Jeová é o princípio do conhecimento.Apenas os tolos desprezam a sabedoria e a disciplina.','Ganhar sabedoria é melhor do que ganhar prata,
+E obtê-la é melhor do que obter ouro.','Não deixe de fazer o bem a quem você deve fazê-lo, Se estiver ao seu alcance ajudar.');
+
+
+INSERT INTO dicionario (termo, classe_gramatical,de,imagem,divisao,relacionado1, relacionado2, relacionado3,definicao1,definicao2,definicao3) VALUES
+('Aluno', 's. m.', 'lat.','aluno','a.lu.no','','','','','','');
